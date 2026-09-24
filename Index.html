@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>KLAN'D | Made With Identity</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* MENÚ */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0,0,0,.88);
+      border-bottom: 1px solid #242424;
+      z-index: 1000;
+    }
+
+    .brand {
+      font-size: 23px;
+      font-weight: 800;
+      letter-spacing: 4px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 22px;
+      font-size: 14px;
+    }
+
+    /* PORTADA */
+    .hero {
+      min-height: 100vh;
+      padding: 130px 25px 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background:
+        radial-gradient(circle at center, #222 0%, #080808 45%, #000 75%);
+    }
+
+    .logo-space {
+      width: 220px;
+      height: 220px;
+      border: 1px solid #555;
+      transform: rotate(45deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 65px;
+      box-shadow: 0 0 45px rgba(255,255,255,.08);
+    }
+
+    .logo-space span {
+      transform: rotate(-45deg);
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -7px;
+      color: #d8d8d8;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 10vw, 90px);
+      letter-spacing: 10px;
+      margin-bottom: 10px;
+    }
+
+    .slogan {
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-size: 13px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 16px 30px;
+      background: #eee;
+      color: #080808;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 2px;
+      font-size: 13px;
+      transition: .25s;
+    }
+
+    .button:hover {
+      background: #aaa;
+    }
+
+    /* COLECCIÓN */
+    section {
+      padding: 90px 7%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      letter-spacing: 5px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #888;
+      margin-bottom: 50px;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .product {
+      background: #101010;
+      border: 1px solid #252525;
+      overflow: hidden;
+    }
+
+    .product-image {
+      height: 360px;
+      background: linear-gradient(145deg, #222, #080808);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      letter-spacing: 2px;
+    }
+
+    .product-info {
+      padding: 22px;
+    }
+
+    .product-info h3 {
+      margin-bottom: 9px;
+      letter-spacing: 2px;
+    }
+
+    .product-info p {
+      color: #999;
+    }
+
+    /* IDENTIDAD */
+    .identity {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .identity p {
+      color: #aaa;
+      line-height: 1.8;
+      margin-top: 25px;
+      font-size: 17px;
+    }
+
+    /* CONTACTO */
+    .contact {
+      text-align: center;
+      background: #0d0d0d;
+    }
+
+    .contact p {
+      color: #999;
+      margin: 20px 0 30px;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      border-top: 1px solid #222;
+      color: #666;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    @media(max-width: 750px) {
+      nav {
+        display: none;
+      }
+
+      .products {
+        grid-template-columns: 1fr;
+      }
+
+      .product-image {
+        height: 420px;
+      }
+
+      .logo-space {
+        width: 160px;
+        height: 160px;
+      }
+
+      .hero h1 {
+        letter-spacing: 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">KLAN'D</div>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#coleccion">Colección</a>
+    <a href="#marca">La marca</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+
+  <div class="logo-space">
+    <span>KD</span>
+  </div>
+
+  <h1>KLAN'D</h1>
+
+  <p class="slogan">X Made With Identity</p>
+
+  <a class="button" href="#coleccion">
+    VER COLECCIÓN
+  </a>
+
+</section>
+
+<section id="coleccion">
+
+  <h2 class="section-title">NUEVA COLECCIÓN</h2>
+  <p class="subtitle">
+    Diseños creados para construir tu propia identidad.
+  </p>
+
+  <div class="products">
+
+    <div class="product">
+      <div class="product-image">
+        PRÓXIMAMENTE
+      </div>
+
+      <div class="product-info">
+        <h3>KLAN'D 01</h3>
+        <p>Nueva colección</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        PRÓXIMAMENTE
+      </div>
+
+      <div class="product-info">
+        <h3>KLAN'D 02</h3>
+        <p>Nueva colección</p>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="product-image">
+        PRÓXIMAMENTE
+      </div>
+
+      <div class="product-info">
+        <h3>KLAN'D 03</h3>
+        <p>Nueva colección</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="marca">
+
+  <div class="identity">
+
+    <h2 class="section-title">KLAN'D</h2>
+
+    <p>
+      Una marca creada alrededor de la identidad, el estilo
+      y la expresión personal. Cada pieza busca representar
+      una forma diferente de llevar lo urbano.
+    </p>
+
+    <p><strong>X MADE WITH IDENTITY</strong></p>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contacto">
+
+  <h2 class="section-title">¿LISTO PARA SER PARTE?</h2>
+
+  <p>
+    Descubre los próximos lanzamientos de KLAN'D.
+  </p>
+
+  <a class="button" href="#">
+    COMPRAR POR WHATSAPP
+  </a>
+
+</section>
+
+<footer>
+  © 2026 KLAN'D — X MADE WITH IDENTITY
+</footer>
+
+</body>
+</html>
